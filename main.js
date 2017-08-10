@@ -30,6 +30,7 @@ if (!ngCompile.prototype.envReady) throw new Error(ENVIORMENT_NOT_READY);
 
 this._modules = [];
 this.modules.forEach(function (module) {
+    require(module.path);
     if(module.name == "ng") {
         global.jQuery = require("jquery");
         global.window.jQuery = global.jQuery;
