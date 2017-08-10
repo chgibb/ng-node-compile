@@ -34,7 +34,6 @@ this.modules.forEach(function (module) {
         global.jQuery = require("jquery");
         global.window.jQuery = global.jQuery;
     }
-    require(module.path);
     if (module.name === "ng") {
         global.angular = global.window.angular;
     }
