@@ -1,6 +1,6 @@
 {
   "name": "@chgibb/ng-node-compile",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Compile angular templates, on Server side!",
   "main": "main.js",
   "dependencies": {
