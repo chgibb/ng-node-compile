@@ -1,2 +1,2 @@
 ## Fork of https://github.com/MoLow/ng-node-compile  
-It has been modified to play nicely with module bundlers, instead of dynamically ```require```ing angular modules. Bundled angular 1.3 dependency has been removed in favour of an npm dependency on angular ^1.6.
+It has been modified to play nicely with module bundlers, instead of dynamically ```require```ing angular modules.
