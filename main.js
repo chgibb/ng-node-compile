@@ -23,15 +23,19 @@ if (!(modules instanceof Array)) {
 this.settings = settings || {};
 this.modules = modules;
 var	_self = this;
-this.modules.unshift({ name: 'ng', path: "angular/angular" });
+this.modules.unshift({ name: 'ng', path: "./angular" });
 this.ready = false;
 
 if (!ngCompile.prototype.envReady) throw new Error(ENVIORMENT_NOT_READY);
 
 this._modules = [];
 this.modules.forEach(function (module) {
-    require(module.path);
+    if(module.name != "ng")
+    {
+        require(module.path);
+    }
     if(module.name == "ng") {
+        require("./angular");
         global.jQuery = require("jquery");
         global.window.jQuery = global.jQuery;
     }
